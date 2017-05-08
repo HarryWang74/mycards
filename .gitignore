@@ -1,0 +1,25 @@
+# .dotfiles
+.idea
+.sass-cache
+.tmp
+.DS_Store
+.powenv
+.bundle
+
+#Files
+config/deploy.yml
+node_modules/*
+log/*
+.push-tmp/
+.ruby-version
+*.swp
+parallel.sh
+
+#Folder
+tmp/
+db/*.sqlite3
+log/*.log
+node_modules
+_vendors
+vendors
+lib

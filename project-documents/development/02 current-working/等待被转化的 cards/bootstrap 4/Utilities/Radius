@@ -1,0 +1,10 @@
+有/无倒角
+<img src="..." alt="..." class="rounded">
+<img src="..." alt="..." class="rounded-0">
+
+单独设置倒角
+<img src="..." alt="..." class="rounded-top">
+<img src="..." alt="..." class="rounded-right">
+<img src="..." alt="..." class="rounded-bottom">
+<img src="..." alt="..." class="rounded-left">
+<img src="..." alt="..." class="rounded-circle">

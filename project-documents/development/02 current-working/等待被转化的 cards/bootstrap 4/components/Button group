@@ -1,0 +1,22 @@
+把若干 button 成组
+  简单应用
+    http://codepen.io/HarryWang74/pen/zZRbqR
+
+  多个 button group 并行成组
+    并行合并多个 button group 要使用 .btn-toolbar 到 parent
+    http://codepen.io/HarryWang74/pen/WpMmGx
+
+  button group 嵌套
+    把 button group 跟 drop down 合并时要使用嵌套结构
+    http://codepen.io/HarryWang74/pen/ZerPBX
+
+  button group 与其他元素结合
+    http://codepen.io/HarryWang74/pen/dvdrNa
+
+  不同尺寸
+    <div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
+    <div class="btn-group" role="group" aria-label="...">...</div>
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+
+  竖排
+    <div class="btn-group-vertical">...</div>

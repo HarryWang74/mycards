@@ -1,0 +1,37 @@
+heading 默认字号
+  h1. => 2.5rem (40px)
+  h2. => 2rem (32px)
+  h3. => 1.75rem (28px)
+  h4. => 1.5rem (24px)
+  h5. => .25rem (20px)
+  h6. => 1rem (16px)
+
+Lead
+  使一段文字突出
+  http://codepen.io/HarryWang74/pen/NpXGdg
+
+文字  inline styling
+  下划线，high light，加粗，斜体 ...
+  http://codepen.io/HarryWang74/pen/evypRL
+
+text-truncate
+  给 column 添加 .text-truncate 后才会用 ... 裁掉多余文字
+  column 里用 p wrapper 文字，truncate 不工作
+  需要给文字 wrapper 的话要使用 <span>
+
+  http://codepen.io/HarryWang74/pen/MpraXP
+
+rollOver 显示文字
+  <abbr title="">
+  http://codepen.io/HarryWang74/pen/BWJoJR
+
+引用
+  http://codepen.io/HarryWang74/pen/Zevbvq
+
+List
+  unstyle list, inline list
+  http://codepen.io/HarryWang74/pen/pepjLK
+
+Description list
+  项目，说明分开成 2栏
+  http://codepen.io/HarryWang74/pen/aJEvGg

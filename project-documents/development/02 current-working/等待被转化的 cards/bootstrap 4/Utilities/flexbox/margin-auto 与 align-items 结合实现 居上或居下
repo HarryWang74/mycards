@@ -1,0 +1,7 @@
+flex-column 时竖排 items 上部对齐
+第一个 item 加 mb-auto margin-bottom: auto，把其余 items 推到底部
+
+
+flex-column 时竖排 items 上部对齐
+最后一个 item 加 mt-auto margin-top: auto，把自己推到底部
+https://codepen.io/HarryWang74/pen/gWaXdp

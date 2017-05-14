@@ -1,0 +1,46 @@
+breakpoints
+  如何使用
+    * 默认 styling 是小于 576px
+    * 使用 breakpoint 时，不要使用 @media (min-width: 576px) { ... } 的写法，除非你需要设置特殊的 breakpoint
+    * 一切通过 Sass mixins
+
+  Extra small (xs)
+    xs < 576
+    bootstrap 默认 styling
+    @include media-breakpoint-up(xs) { ... }
+    @include media-breakpoint-down(xs) { ... }
+    @include media-breakpoint-only(xs) { ... }
+
+  Small (sm)
+    xs < sm < 768
+    @include media-breakpoint-up(sm) { ... }
+    @include media-breakpoint-down(sm) { ... }
+    @include media-breakpoint-only(sm) { ... }
+
+  Medium (md)
+    xs < sm < md < 992
+    @include media-breakpoint-up(md) { ... }
+    @include media-breakpoint-down(md) { ... }
+    @include media-breakpoint-only(md) { ... }
+
+  Large (lg)
+    xs < sm < md < lg < 1200
+    @include media-breakpoint-up(lg) { ... }
+    @include media-breakpoint-down(lg) { ... }
+    @include media-breakpoint-only(lg) { ... }
+
+  Extra large (xl)
+    > 1200
+    @include media-breakpoint-up(xl) { ... }
+    @include media-breakpoint-only(xl) { ... }
+
+  between mixins
+    @include media-breakpoint-between(md, xl) { ... }
+
+  4 breakpoints
+    576px
+    768px
+    992px
+    1200px
+
+  * 跟 bt3 相比，小屏幕尺寸变了

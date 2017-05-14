@@ -1,0 +1,7 @@
+没变化，还是两种
+
+  .container
+    固定宽度，居中
+
+  .container-fluid
+    100% 宽度

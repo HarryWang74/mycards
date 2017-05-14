@@ -1,0 +1,21 @@
+设置 container 的 justify-content， -webkit-justify-content
+
+  justify-content
+  -webkit-justify-content
+
+  https://codepen.io/HarryWang74/pen/eWvoMY
+  
+  flex-start
+  默认值，items 对齐 container flex axis的起始位置，item 没有间距
+
+  flex-end
+  items 对齐 container flex axis的终止位置，item 没有间距
+
+  center
+  items 对齐 container flex axis的中间，item 没有间距
+
+  space-around
+  item 自动撑满 container flex axis，item 有间距。第一个 item 有左边距，最后一个 item 有右边距
+
+  space-between
+  item 自动撑满 container flex axis，item 有间距。第一个 item 有左边距，最后一个 item 有右边距

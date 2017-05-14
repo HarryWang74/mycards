@@ -1,0 +1,4 @@
+隐藏 container 里的文字但不设置 display: none
+<h1 class="text-hide">Custom heading</h1>
+
+https://codepen.io/HarryWang74/pen/gWpMRP

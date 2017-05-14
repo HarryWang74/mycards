@@ -1,0 +1,31 @@
+flex container
+  应用 flex layout 就是把 container 设置成 display: flex
+  container flex 和 inline-flex 的区别
+
+flex item 宽度
+  单独设置 item，设定具体宽度，或是其他 item 的几倍或几分之一
+
+flex item 排列顺序
+  默认按 DOM 顺序。可以单独制定 item 的顺序
+
+flex items 是否换行
+  默认状态下 flex items 不换行
+  可以设置成换行，换行后反向排列
+
+flex items 排列方向
+  设置 container 让 flex items 沿 X/Y 轴按顺序排列。
+
+    flex items 沿 X 轴，按顺序，从左向右/从右向左排列
+    flex items 沿 Y 轴，按顺序，从上到下/从下到上排列
+
+flex items 对齐，分布方式
+
+  flex items 沿 X 轴对齐/分布
+  设置 container，让 items 对齐 X 轴左侧，中间，右侧。
+  设置 container，让 items 等间距分布
+
+  flex items 沿 Y 周对齐/分布
+    设置 container，让 items 对齐 Y 轴顶部，中部，底部，baseline，自动等高 Y 轴
+    单独设置 item， 对齐 Y 轴顶部，中部，底部，baseline，自动等高 Y 轴
+
+    设置 container，让 items 换行并对齐 Y 轴顶部，中部，底部，baseline，自动等高 Y 轴，等距分布

@@ -1,0 +1,5 @@
+设置，blcok, inline, inline block
+
+<div class="d-inline"> // 设置 inline block
+<span class="d-block"> // 设置 blcok
+<div class="d-inline-block"> 设置 inline block

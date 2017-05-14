@@ -1,0 +1,16 @@
+flex container display 属性
+  设置 flex container 使用 block/inline level display 属性。
+  flex container display 不会对 flex items 产生任何影响。
+
+  https://codepen.io/HarryWang74/pen/WjGmQy                                                                                                                                                                                                                                                                                            
+  flex
+    container 使用 block level display
+
+    display: -webkit-flex;
+    display: flex;
+
+  inline-flex
+    container 使用 block level display
+
+    display: -webkit-inline-flex;display
+    display: inline-flex;

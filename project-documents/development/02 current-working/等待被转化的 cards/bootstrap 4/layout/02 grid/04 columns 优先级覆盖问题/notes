@@ -1,0 +1,12 @@
+coulmns className 互相覆盖时，根据移动优先原则，小屏幕 className 会覆盖大屏幕 className
+
+  例如
+  一个 div 定义了 col-lg, col-md, col-sm, col-
+  large screen 时用 col-lg 定义的 layout
+  medium screen 时用 col-md 定义的 layout
+  small screen 时用 col-sm 定义的 layout
+  extra small screen 时用 col 定义的 layout
+
+  代码分析
+
+http://codepen.io/HarryWang74/pen/KWOomE

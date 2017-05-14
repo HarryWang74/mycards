@@ -1,0 +1,44 @@
+https://plnkr.co/edit/BxvKl62AnA9Ulk3dHjMH?p=preview
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link data-require="bootstrap-css@3.3.7" data-semver="3.3.7" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" />
+    <script data-require="angular.js@1.6.2" data-semver="1.6.2" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body ng-app="myApp">
+    <my-component></my-component>
+    <script src="myComponent.js"></script>
+  </body>
+
+</html>
+
+myComponent.html
+  <h1>My Component</h1>
+  <div ng-transclude="transcludeContent"></div>
+
+myComponent.js
+  (function () {
+    angular.module('myApp', []);
+    angular.module('myApp').component('myComponent', {
+      templateUrl: "myComponent.html",
+      controllerAs: "ctrl",
+      bindings: {
+      },
+      transclude: {
+          // ? 代表 optional
+          'transcludeContent': '?transcludeContent',
+      },
+      controller: ['$window', function($window){
+        var ctrl = this;
+
+        ctrl.$onInit = function () {
+          console.log("see?")
+        };
+      }]
+    });
+  })();

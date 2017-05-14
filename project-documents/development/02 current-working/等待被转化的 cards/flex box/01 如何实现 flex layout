@@ -1,0 +1,6 @@
+如何实现 flex layout
+  实现  flex box 布局，就是把 container 的 display 属性设置成 flex
+  container 使用 flex 属性后，child 被转化成 flex items
+  默认状态下，flex items 的宽度由内容决定，不换行
+
+  https://codepen.io/HarryWang74/pen/QvKYdg?editors=1100#0

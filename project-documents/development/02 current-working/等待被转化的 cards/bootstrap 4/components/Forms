@@ -1,0 +1,50 @@
+如何使用 bootstrap 预设的 from class
+  添加 .form-control 到 <select>，<input>
+    http://codepen.io/HarryWang74/pen/jBpPRX
+
+  添加 .form-check 到 Checkboxes 和 radios
+    要放到 label 里面，横排，竖排
+    http://codepen.io/HarryWang74/pen/oZMXrB
+
+  添加 .form-control-file 到 File inputs
+    http://codepen.io/HarryWang74/pen/MpBagN
+
+Form layouts
+  成组的元素(比如 lable 和 input 就是一个 group)
+    用 <fieldset> 或 <div> 作为 container
+    给 container 添加 .form-group
+    http://codepen.io/HarryWang74/pen/NpBGWE
+
+  inline form
+    http://codepen.io/HarryWang74/pen/PpBPwe
+
+  使用 grid
+    http://codepen.io/HarryWang74/pen/YZjyXr
+
+不同尺寸
+  http://codepen.io/HarryWang74/pen/ryrOOV?editors=1100#0
+
+不同状态
+  disabled, read only，
+  http://codepen.io/HarryWang74/pen/XMBmXm
+
+说明文字
+  block, inline
+  http://codepen.io/HarryWang74/pen/RpBWrx
+
+Validation
+  http://codepen.io/HarryWang74/pen/qryOZr
+
+自定义元素
+  bootstrap 还提供了自定义 form 元素，用来取代默认的 HTML tag 能更方便的添加自定义 styling
+    checkbox
+    http://codepen.io/HarryWang74/pen/vxzvqw?editors=1100#0
+
+    radios
+    http://codepen.io/HarryWang74/pen/peOGow
+
+    select
+    http://codepen.io/HarryWang74/pen/zZJexj
+
+    File browser
+    http://codepen.io/HarryWang74/pen/YZOBPb

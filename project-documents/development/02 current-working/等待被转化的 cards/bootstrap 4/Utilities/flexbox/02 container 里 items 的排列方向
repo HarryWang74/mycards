@@ -1,0 +1,42 @@
+一共 4 种排列方式，横向左到右(默认)，横向右到左，竖向上到下(默认)，竖向下到上
+
+item 横向排列
+http://codepen.io/HarryWang74/pen/mmdjMO
+
+  flex-row
+  items 从左向右排列，可以和 break point 结合
+    <div class="d-flex flex-row">
+    .flex-row
+    .flex-sm-row
+    .flex-md-row
+    .flex-lg-row
+    .flex-xl-row
+
+  flex-row-reverse
+  items 从右到左排列，可以和 break point 结合
+    <div class="d-flex flex-row-reverse">
+    .flex-row-reverse
+    .flex-sm-row-reverse
+    .flex-md-row-reverse
+    .flex-lg-row-reverse
+    .flex-xl-row-reverse
+
+items 竖向排列
+http://codepen.io/HarryWang74/pen/mmdjpR
+  flex-column
+  items 从上向下排列，可以和 break point 结合
+    <div class="d-flex flex-column">
+    .flex-column
+    .flex-sm-column
+    .flex-md-column
+    .flex-lg-column
+    .flex-xl-column
+
+  flex-column-reverse
+  items 从下向上排列，可以和 break point 结合
+    <div class="d-flex flex-column-reverse">
+    .flex-column-reverse
+    .flex-sm-column-reverse
+    .flex-md-column-reverse
+    .flex-lg-column-reverse
+    .flex-xl-column-reverse

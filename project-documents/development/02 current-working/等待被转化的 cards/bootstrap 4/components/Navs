@@ -1,0 +1,23 @@
+添加 .nav 到 <ul><li> 或 <nav><a>
+实现基本导航，常用于 tab 
+
+link
+http://codepen.io/HarryWang74/pen/XModjg
+
+tab
+http://codepen.io/HarryWang74/pen/ZeVWaK
+
+pills
+http://codepen.io/HarryWang74/pen/xqmVqY
+
+对齐
+居中，居右
+http://codepen.io/HarryWang74/pen/qrLZXK
+
+撑满,
+nav-fill 撑满，不等分。nav-justified 撑满，等分
+http://codepen.io/HarryWang74/pen/GWPZdV
+
+排列
+横排，竖排
+http://codepen.io/HarryWang74/pen/evbZjG

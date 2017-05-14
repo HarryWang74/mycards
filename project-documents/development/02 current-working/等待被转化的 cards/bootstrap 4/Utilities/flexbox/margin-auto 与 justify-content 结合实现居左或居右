@@ -1,0 +1,8 @@
+justify-content-end 时，所有 items 右对齐，
+第一个 item 使用 mr-auto margin-right: auto 可以左对齐
+
+
+justify-content-start 时，所有 items 左对齐，
+最后一个 item 使用 ml-auto margin-left:auto 可以右对齐
+
+https://codepen.io/HarryWang74/pen/wdKPxW

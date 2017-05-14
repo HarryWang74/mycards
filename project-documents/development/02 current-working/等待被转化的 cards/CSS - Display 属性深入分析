@@ -1,0 +1,44 @@
+常见/常用的 display 属性
+  display: inline;        /* Default of all elements, unless UA stylesheet overrides */
+  display: inline-block;  /* Characteristics of block, but sits on a line */
+  display: block;         /* UA stylesheet makes things like <div> and <section> block */
+  display: run-in;        /* Not particularly well supported or common */
+  display: none;
+  display: flex
+  display: inline-flex
+
+  display:inline
+    https://codepen.io/HarryWang74/pen/wdrLzN
+
+    * 常见的 inline 元素类似 <span>, <strong> 等
+    * inline 元素会一个紧挨着另一个排列
+    * 使用 inline 后，元素的宽度和高度由内容决定。给 inline 元素设定 width/height 无效
+    * 可以给 inline 元素设定 padding/margin，但 inline 元素的 padding/margin 只在横向有效，竖向无效
+
+
+  display:inline-block
+    https://codepen.io/HarryWang74/pen/VbMJxd
+
+    * inline-block 元素会一个紧挨着另一个排列
+    * inline-block 元素可以指定 width/height
+    * inline-block 元素的 margin/padding 横向和竖向都有效
+
+  display: block
+    https://codepen.io/HarryWang74/pen/jmGjQb
+
+    * 给 block 元素设置 float 后，它们的属性变得和 inline-block 一样
+
+  display: table
+    强制转换非 table 元素为 table 元素
+
+    display: table;
+    display: table-cell;
+    display: table-column;
+    display: table-colgroup;
+    display: table-header-group;
+    display: table-row-group;
+    display: table-footer-group;
+    display: table-row;
+    display: table-caption;
+
+    https://codepen.io/HarryWang74/pen/XReLQa

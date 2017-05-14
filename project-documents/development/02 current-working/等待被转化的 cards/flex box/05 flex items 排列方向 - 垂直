@@ -1,0 +1,16 @@
+设置 container 的 flex-direction，-webkit-flex-direction
+
+  flex-direction
+  -webkit-flex-direction
+
+  container flex alex X轴默认从左侧开始，到右侧终止
+
+  https://codepen.io/HarryWang74/pen/YVGmQO
+
+  column
+    默认
+    flex item 从 container flex alex 的Y轴起始位置开始排列
+
+
+  column-reverse
+    flex item 从 container flex alex 的Y轴终止位置开始排列

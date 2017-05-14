@@ -1,0 +1,26 @@
+设置 container 让 items 自动换行(默认)，不换行，换行并反向排列
+可以和 breakpoint 结合
+
+<div class="d-flex flex-wrap">
+<div class="d-flex flex-nowrap">
+<div class="d-flex flex-wrap-reverse">
+
+.flex-nowrap
+.flex-wrap
+.flex-wrap-reverse
+
+.flex-sm-nowrap
+.flex-sm-wrap
+.flex-sm-wrap-reverse
+
+.flex-md-nowrap
+.flex-md-wrap
+.flex-md-wrap-reverse
+
+.flex-lg-nowrap
+.flex-lg-wrap
+.flex-lg-wrap-reverse
+
+.flex-xl-nowrap
+.flex-xl-wrap
+.flex-xl-wrap-reverse

@@ -1,0 +1,10 @@
+https://marceljuenemann.github.io/angular-drag-and-drop-lists/
+
+是一个很好的 library，可以 drag/drop 由 ng-repeat 生成的 element，自动更新 object
+
+API documents
+https://github.com/marceljuenemann/angular-drag-and-drop-lists
+
+
+一个简单例子，在 component 里实现 drog/drop
+https://plnkr.co/edit/MxW2UZj90CWtgns4FHlV?p=preview

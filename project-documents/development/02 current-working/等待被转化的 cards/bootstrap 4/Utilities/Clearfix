@@ -1,0 +1,3 @@
+parent没有 float 时，如果 child 使用 float, parent 将无法正确 wrap child （parent 的高度不再又 child 高度决定）
+这会导致布局问题，在 parent 上添加 .clearfix 可以解决这一问题
+http://codepen.io/HarryWang74/pen/WpPabm

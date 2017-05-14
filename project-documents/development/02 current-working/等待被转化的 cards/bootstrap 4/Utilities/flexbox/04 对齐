@@ -1,0 +1,59 @@
+* items 横排时不自动等高 container
+* items 竖排时不自动等宽 container
+* items 根据 content 调节宽度
+* items 随 axis 方向有 左到右，右到左，上到下，下到上 4种变化
+* 可以跟 break point 结合
+
+
+flex items 对齐 container flex axis 的起始位置
+  flex-row
+  * x 轴对左边，y 轴对顶部
+  
+
+  align-items-start
+  align-items-sm-start
+  align-items-md-start
+  align-items-lg-start
+  align-items-xl-start
+
+  http://codepen.io/HarryWang74/pen/zwxbBL
+
+
+flex items 对齐 container flex axis 的终止位置
+  align-items-end
+  align-items-sm-end
+  align-items-md-end
+  align-items-lg-end
+  align-items-xl-end
+
+  http://codepen.io/HarryWang74/pen/MmYxJQ
+
+
+flex items 对齐 container flex axis 的中间
+  align-items-center
+  align-items-sm-center
+  align-items-md-center
+  align-items-lg-center
+  align-items-xl-center
+
+  http://codepen.io/HarryWang74/pen/JNozWz
+
+
+flex items 对齐 container flex axis 的 baseline
+  align-items-baseline
+  align-items-sm-baseline
+  align-items-md-baseline
+  align-items-lg-baseline
+  align-items-xl-baseline
+
+  http://codepen.io/HarryWang74/pen/PmwLjz
+
+
+flex items 撑满对齐 container flex axis
+  align-items-stretch
+  align-items-sm-stretch
+  align-items-md-stretch
+  align-items-lg-stretch
+  align-items-xl-stretch
+
+  http://codepen.io/HarryWang74/pen/JNozJz

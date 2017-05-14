@@ -1,0 +1,65 @@
+
+  * items 横排时自动等高 container
+  * items 竖排时自动等宽 container
+  * items 根据 content 调节宽度
+  * items 随 axis 方向有 左到右，右到左，上到下，下到上 4种变化
+  * 可以跟 break point 结合
+
+
+  flex items 对齐 container flex axis 的起始位置
+
+    .justify-content-start
+    .justify-content-sm-start
+    .justify-content-md-start
+    .justify-content-lg-start
+    .justify-content-xl-start
+
+    http://codepen.io/HarryWang74/pen/NjPobK
+
+
+  flex items 对齐 container flex axis 的终止位置
+
+    .justify-content-end
+    .justify-content-sm-end
+    .justify-content-md-end
+    .justify-content-lg-end
+    .justify-content-xl-end
+
+    http://codepen.io/HarryWang74/pen/oWgmoy
+
+
+
+  flex items 对齐 container flex axis 的中间
+
+    .justify-content-center
+    .justify-content-sm-center
+    .justify-content-md-center
+    .justify-content-lg-center
+    .justify-content-xl-center
+
+    http://codepen.io/HarryWang74/pen/WjbPPx
+
+
+
+  items 横向撑满 container, 两边留空，中间等分
+    只有在 items 宽度总和小于 container 宽度，两边才有留空
+    当 items 宽度总和大于 container 宽度，items 自动撑满 container，两边没有留空
+
+    .justify-content-around
+    .justify-content-sm-around
+    .justify-content-md-around
+    .justify-content-lg-around
+    .justify-content-xl-around
+
+    http://codepen.io/HarryWang74/pen/ybyZWX
+
+
+  items 横向撑满 container，两边不留空，中间等分
+
+    .justify-content-between
+    .justify-content-sm-between
+    .justify-content-md-between
+    .justify-content-lg-between
+    .justify-content-xl-between
+
+    http://codepen.io/HarryWang74/pen/oWgmrJ

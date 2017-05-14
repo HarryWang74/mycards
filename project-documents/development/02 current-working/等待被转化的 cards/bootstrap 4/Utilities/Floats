@@ -1,0 +1,15 @@
+设置 float left/right 或者取消 float
+可以和 breakpoints 结合
+
+float-left
+float-right
+float-none
+<div class="float-left">Float left on all viewport sizes</div><br>
+<div class="float-right">Float right on all viewport sizes</div><br>
+<div class="float-none">Don't float on all viewport sizes</div><br>
+
+
+float-sm-left
+float-md-left
+float-lg-left
+float-xl-left

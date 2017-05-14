@@ -1,0 +1,47 @@
+example
+  {property}{sides}-{size}
+  {property}{sides}-{breakpoint}-{size}
+
+  .mt-0 // margin top 0
+  .ml-1 // margin left 1rem * 0.25
+  .ml-lg-5 // 默认 991 以上尺寸，margin left = 1rem * 3
+
+
+
+设置 margin/padding
+  m - set margin
+  p - set padding
+
+设置属性
+  t - margin-top or padding-top
+  b - margin-bottom or padding-bottom
+  l - margin-left or padding-left
+  r - margin-right or padding-right
+  x - set both *-left and *-right
+  y - set both *-top and *-bottom
+
+设置尺寸
+  基于 system $spacer 设置尺寸
+    0 - for classes that eliminate the margin or padding by setting it to 0
+    1 - (by default) $spacer-x * .25 or $spacer-y * .25
+    2 - (by default) $spacer-x * .5 or $spacer-y * .5
+    3 - (by default) $spacer-x or $spacer-y
+    4 - (by default) $spacer-x * 1.5 or $spacer-y * 1.5
+    5 - (by default) $spacer-x * 3 or $spacer-y * 3
+
+    * 默认 $spacer = 1rem
+
+margin-auto
+  针对固定宽度的 element，宽度居中
+    <div class="mx-auto" style="width: 200px;">
+      Centered element
+    </div>
+
+
+
+
+
+
+
+
+  https://codepen.io/HarryWang74/pen/gWpMRP

@@ -1,0 +1,21 @@
+单独设定 child 垂直对齐方式，设置 child 的 align-self，-webkit-align-self
+
+  https://codepen.io/HarryWang74/pen/vmxQgE?editors=1100#0
+  
+  align-self
+  -webkit-align-self
+
+  stretch
+  默认值，children 与 container 等高
+
+  flex-start
+  children 高度按实际内容，对齐 container 上部
+
+  flex-end
+  children 高度按实际内容，对齐 container 底部
+
+  center
+  children 高度按实际内容，对齐 container 中部
+
+  baseline
+  children 高度按实际内容，基线对齐，类似 flex-start

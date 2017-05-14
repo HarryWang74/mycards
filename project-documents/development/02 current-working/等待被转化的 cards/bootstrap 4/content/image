@@ -1,0 +1,16 @@
+Responsive images
+  添加 img-fluid 后实现 max-width: 100%; height: auto;
+  http://codepen.io/HarryWang74/pen/MprjgL
+
+thumbnail
+  加上 1px 浅灰色 border
+  http://codepen.io/HarryWang74/pen/ZevpYZ
+
+左/右对齐
+  http://codepen.io/HarryWang74/pen/dvJpop
+
+居中对齐
+  http://codepen.io/HarryWang74/pen/ZevpQN
+
+图片注释
+  http://codepen.io/HarryWang74/pen/EWogGN

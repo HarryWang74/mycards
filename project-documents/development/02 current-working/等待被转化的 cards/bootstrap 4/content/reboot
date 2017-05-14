@@ -1,0 +1,17 @@
+bootstrap4 新的理念
+基于 Normalize.css
+给很多 HTML 元素添加一些非常基本的 styling，再通过额外的 className 提供更多选择
+  添加基本 styling 到 <table>，再通过 .table-bordered 等 className 提供更多选择
+
+Reboot 实际上就是 bootstrap 默认 styling
+
+bootstrap 添加默认 styling 的原则，实际上也适用于日常
+  避免添加 margin-top
+  涉及到字体时，尽量少用 font-*，尽可能多用 inherit
+  不仅仅是字体，设置 margin, padding 时，使用 rem
+
+一些重要的默认 styling 设置
+  * <html> 里 font-size: 是 16px
+  * <body> 里 reset to 1rem
+
+  

@@ -1,0 +1,11 @@
+scroll 页面时，根据当前位置动态激活导航
+http://codepen.io/HarryWang74/pen/XMOMXw
+
+  * parent, nav, scroll content 都要用 relative position
+
+  // container
+  <div>
+    // nav
+    <nav id="navbar-example2">
+    // content
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">

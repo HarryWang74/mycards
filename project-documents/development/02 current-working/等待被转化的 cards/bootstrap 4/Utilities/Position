@@ -1,0 +1,6 @@
+在页面内定位 element。fix top, fix bottom, sticky top
+
+
+<div class="fixed-top">...</div>
+<div class="fixed-bottom">...</div>
+<div class="sticky-top">...</div>

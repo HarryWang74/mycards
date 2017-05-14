@@ -1,0 +1,29 @@
+并不局限于 <button>, 也可以用在 <a>, <input>上
+
+  不同对象
+    <a>, <button>, <input>
+    http://codepen.io/HarryWang74/pen/YZYmLQ
+
+  不同颜色
+    http://codepen.io/HarryWang74/pen/dvJxvp
+
+  不同尺寸
+    small, normal, large, block
+    http://codepen.io/HarryWang74/pen/OpzKEE
+
+  不同类型
+    button, link button
+    http://codepen.io/HarryWang74/pen/WpdVKL
+
+  不同状态
+    normal, active, disabled
+    http://codepen.io/HarryWang74/pen/YZYmOx
+
+  toggle button
+    http://codepen.io/HarryWang74/pen/RpQbyE
+
+  checkBox 使用 button styling
+    http://codepen.io/HarryWang74/pen/gmvYKJ
+
+  radio button 使用 button styling
+    http://codepen.io/HarryWang74/pen/yMvBRV

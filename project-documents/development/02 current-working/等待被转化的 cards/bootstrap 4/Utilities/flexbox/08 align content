@@ -1,0 +1,53 @@
+* 只对超过一行的 items row 有效 (换行后的 items)
+* 一定要和 flex-wrap 连用，因为 flex container 默认是不换行的
+* items 对齐 container flex axis 有 5 种对齐方式
+* start, end, center, between, around, or stretch
+* 可以跟 break points 结合
+
+.align-content-start
+.align-content-sm-start
+.align-content-md-start
+.align-content-lg-start
+.align-content-xl-start
+
+http://codepen.io/HarryWang74/pen/rmVvwE
+
+
+.align-content-end
+.align-content-sm-end
+.align-content-md-end
+.align-content-lg-end
+.align-content-xl-end
+https://codepen.io/HarryWang74/pen/LypzaQ
+
+
+.align-content-center
+.align-content-sm-center
+.align-content-md-center
+.align-content-lg-center
+.align-content-xl-center
+https://codepen.io/HarryWang74/pen/PmPJvg
+
+
+.align-content-between
+.align-content-sm-between
+.align-content-md-between
+.align-content-lg-between
+.align-content-xl-between
+https://codepen.io/HarryWang74/pen/ZKbazL
+
+
+.align-content-around
+.align-content-sm-around
+.align-content-md-around
+.align-content-lg-around
+.align-content-xl-around
+https://codepen.io/HarryWang74/pen/bWVYdN
+
+
+.align-content-stretch
+.align-content-sm-around
+.align-content-md-around
+.align-content-lg-around
+.align-content-xl-around
+https://codepen.io/HarryWang74/pen/WjQXQQ

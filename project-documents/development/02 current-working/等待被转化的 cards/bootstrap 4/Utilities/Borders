@@ -1,0 +1,6 @@
+使用预设，remove border
+  <span class="border-0"></span> // 没有border
+  <span class="border-top-0"></span> // 没有顶部
+  <span class="border-right-0"></span> // 没有右侧
+  <span class="border-bottom-0"></span> // 没有底部
+  <span class="border-left-0"></span> // 没有左侧

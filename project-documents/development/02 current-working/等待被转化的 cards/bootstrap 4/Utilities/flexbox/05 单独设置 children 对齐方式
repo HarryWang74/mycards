@@ -1,0 +1,55 @@
+container 不设置 items 对齐方式，单独给 item 设置对齐方式
+
+item 对齐 container flex axis 起始位置
+
+  .align-self-start
+  .align-self-sm-start
+  .align-self-md-start
+  .align-self-lg-start
+  .align-self-xl-start
+
+  https://codepen.io/HarryWang74/pen/eWNdWw
+
+
+item 对齐 container flex axis 终止位置
+
+  .align-self-end
+  .align-self-sm-end
+  .align-self-md-end
+  .align-self-lg-end
+  .align-self-xl-end
+
+  https://codepen.io/HarryWang74/pen/WjvGEg
+
+
+item 对齐 container flex axis 中间
+
+  .align-self-center
+  .align-self-sm-center
+  .align-self-md-center
+  .align-self-lg-center
+  .align-self-xl-center
+
+  https://codepen.io/HarryWang74/pen/xdGEPZ
+
+
+item 对齐 container flex axis 的 baseline
+
+  .align-self-baseline
+  .align-self-sm-baseline
+  .align-self-md-baseline
+  .align-self-lg-baseline
+  .align-self-xl-baseline
+
+  https://codepen.io/HarryWang74/pen/qmdaxN
+
+
+item 拉伸对齐 container flex axis
+
+  .align-self-stretch
+  .align-self-sm-stretch
+  .align-self-md-stretch
+  .align-self-lg-stretch
+  .align-self-xl-stretch
+
+  https://codepen.io/HarryWang74/pen/XRbjEJ

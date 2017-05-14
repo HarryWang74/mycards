@@ -1,0 +1,13 @@
+设置 container 的 flex-wrap，-webkit-flex-wrap 决定 children 是否换行
+
+  flex-wrap
+  -webkit-flex-wrap
+
+  nowrap:
+    默认值，不换行，宽度不够，child 自适应。哪怕已经制定了宽度
+
+  wrap:
+    换行
+
+  wrap-reverse:
+    换行，reverse

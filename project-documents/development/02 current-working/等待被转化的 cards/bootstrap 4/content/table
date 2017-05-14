@@ -1,0 +1,56 @@
+Examples
+  实例，反色
+  http://codepen.io/HarryWang74/pen/mWprWq
+
+设置 table head
+  table header 预设了 light 和 dark 两种颜色
+  http://codepen.io/HarryWang74/pen/zZpKzv
+
+间错条纹
+  http://codepen.io/HarryWang74/pen/LWeRzx
+
+有 border
+  http://codepen.io/HarryWang74/pen/KWZgQL
+
+rollOver 改变颜色
+  http://codepen.io/HarryWang74/pen/XMVjqX
+
+紧凑布局
+  http://codepen.io/HarryWang74/pen/zZpKaq
+
+使用预设 class color
+  <!-- On rows -->
+  <tr class="table-active">...</tr>
+  <tr class="table-success">...</tr>
+  <tr class="table-warning">...</tr>
+  <tr class="table-danger">...</tr>
+  <tr class="table-info">...</tr>
+
+  <tr class="bg-primary">...</tr>
+  <tr class="bg-success">...</tr>
+  <tr class="bg-warning">...</tr>
+  <tr class="bg-danger">...</tr>
+  <tr class="bg-info">...</tr>
+
+  <!-- On cells (`td` or `th`) -->
+  <tr>
+    <td class="table-active">...</td>
+    <td class="table-success">...</td>
+    <td class="table-warning">...</td>
+    <td class="table-danger">...</td>
+    <td class="table-info">...</td>
+  </tr>
+
+  <tr>
+    <td class="bg-primary">...</td>
+    <td class="bg-success">...</td>
+    <td class="bg-warning">...</td>
+    <td class="bg-danger">...</td>
+    <td class="bg-info">...</td>
+  </tr>
+
+Responsive tables
+  768 以下 table 不自适应，自动生成滚动
+  <table class="table table-responsive">
+    ...
+  </table>

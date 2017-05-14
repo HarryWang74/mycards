@@ -1,0 +1,2 @@
+bootstrap 使用的一个新 JS library，让使用 absolute position 的元素能和另一个元素保持相对位置。
+例如 tooltip, popover, 打开后页面 scroll 时依旧能保持相对位置。 

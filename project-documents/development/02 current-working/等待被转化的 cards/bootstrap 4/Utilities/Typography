@@ -1,0 +1,25 @@
+文字撑满，不换行，左中右对齐，大小写，加粗，斜体
+
+.text-justify
+.text-nowrap
+
+文字对齐
+  .text-left
+  .text-center
+  .text-right
+
+特定 breakpoint 下的对齐方式
+  .text-sm-left
+  .text-md-left
+  .text-lg-left
+  .text-xl-left
+
+大小写(Text transform)
+  .text-lowercase
+  .text-uppercase
+  .text-capitalize
+
+Styling
+  .font-weight-bold
+  .font-weight-normal
+  .font-italic

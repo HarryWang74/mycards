@@ -1,0 +1,53 @@
+card 基本结构
+  <div class="card">
+    <img class="card-img-top">
+    <div class="card-block">
+      <h3 class="card-title">
+      <p class="card-text">
+      <a class="btn">
+
+card-block
+  除 img 外所有 content 都要放在 .card-block 里面
+    .card-title, .card-subtitle, .card-text, .card-link
+    http://codepen.io/HarryWang74/pen/RpMQxy
+
+card 成组
+  group
+    所有 card 横排，等高，等宽，无间距
+    http://codepen.io/HarryWang74/pen/yMKvEN?editors=1100#0
+
+  deck
+    所有 card 横排，等高，等宽，有间距
+    http://codepen.io/HarryWang74/pen/WpzyYV?editors=1000#0
+
+  columns
+    Masonry styling
+    http://codepen.io/HarryWang74/pen/wJmXOb/?editors=1100
+
+img
+  加在顶部要用 .card-img-top
+    http://codepen.io/HarryWang74/pen/gmejYE?editors=1100#0
+
+  img 覆盖 card
+    http://codepen.io/HarryWang74/pen/LWdBGm?editors=1100#0
+
+list group
+  list group 要和 card-block 分开用
+  http://codepen.io/HarryWang74/pen/oZqMxM
+
+header/footer
+  http://codepen.io/HarryWang74/pen/oZqMLM
+
+设置 card 的宽度
+  card 预设宽度 100%，可以用 columns 或 utilities class 设置宽度
+  http://codepen.io/HarryWang74/pen/rydrMw
+
+文字对齐
+  http://codepen.io/HarryWang74/pen/QpmBdN
+
+加入 nav
+  http://codepen.io/HarryWang74/pen/PpRBWM
+
+颜色
+  背景色，outline，反色
+  http://codepen.io/HarryWang74/pen/WpzKjr

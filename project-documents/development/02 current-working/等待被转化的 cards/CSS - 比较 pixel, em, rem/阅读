@@ -1,0 +1,24 @@
+https://webdesign.tutsplus.com/tutorials/comprehensive-guide-when-to-use-em-vs-rem--cms-23984
+  使用 em, rem 更加灵活，例如不同分辨率下只要设置 body font-size，所有 margin, padding 都可以跟着变化。
+  bootstrap4, breakpoint 使用 pixel，其余使用 rem
+  浏览器默认 font-size 是 16px。但这个设定可以被浏览器用户设定改变。
+
+  总的说，尺寸需要随 root font-size 改变时用 rem
+  只需要改变一部分布局的尺寸时，用 em
+  设定 font-size 时最好避免用 em
+
+https://css-tricks.com/rems-ems/
+  使用 em, 调节字号在 model level
+  http://codepen.io/chriscoyier/pen/tvheK
+  http://codepen.io/HarryWang74/pen/BRraXO
+
+
+http://stackoverflow.com/questions/11799236/should-i-use-px-or-rem-value-units-in-my-css
+  默认状态下，浏览器按 96dpi/pixel 渲染网页
+  特定设备上（苹果的 Retina displays），浏览器自定调整渲染方式。所以  Retina displays 下 1 css pixel = 2 physical Retina display pixels
+
+
+https://www.sundoginteractive.com/blog/to-use-or-not-to-use-px-em-rem-or
+https://zellwk.com/blog/media-query-units/
+https://www.futurehosting.com/blog/web-design-basics-rem-vs-em-vs-px-sizing-elements-in-css/
+http://engageinteractive.co.uk/blog/em-vs-rem-vs-px

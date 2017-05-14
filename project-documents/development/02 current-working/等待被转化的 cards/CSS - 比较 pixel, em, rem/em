@@ -1,0 +1,26 @@
+em
+  使用 em 可以解决老 IE 浏览器不能缩放字体的问题。
+  浏览器计算根据元素 parent 的 font-size 计算一个 em 是多少，所以 em = parent font-size
+  child 自动继承 parnet 的 font-size
+  现代浏览器默认所以元素的 parent <HTML> 的 font-size 是 16 pixel
+  em 可以被应用到任何属性上 width, margin ....
+
+  https://codepen.io/HarryWang74/pen/oWEYGr
+    元素的 parent 是 <body>, <body> 使用默认设置 font-size: 16px，
+    这意味着所有 <body> 下所有 child, 1em = 16 pixel
+
+      parent font-size: 2em
+      * 如果不单独设置 child，parent 和 child 的 font-size 都被渲染成 16x2 = 32 pixel
+
+      parent width: 10em
+      * 浏览器渲染时 16x10 = 160px
+
+      child font-size: 2em
+      单独设置 child,
+        child em = parent font-size，parnet font-size = 32 px,
+        所以 child font-size: 2em 被渲染成 32x2 = 64px;
+
+  tip
+  默认设置下，1em = 16px，可以把 1em 设置成 10 px，便于计算
+    设置 <html> { font-size:62.5%; }
+    下面所有 child 1em = 10px; 15em = 150px, 2.4em = 24px

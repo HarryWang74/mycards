@@ -1,0 +1,8 @@
+设置 row ，决定里面所有 columns 的对齐方式 
+  对齐 row 上部，对齐 row 中部，对齐 row 下部
+  http://codepen.io/HarryWang74/pen/YZxRLx
+
+单独设置 column 的对齐方式
+  特定的 columns 对齐 row 上部，对齐 row 中部，对齐 row 下部
+  * 单独设置了 coulumn 的垂直对齐后，会覆盖 row 里面为所有 column 设置的垂直对齐方式
+  http://codepen.io/HarryWang74/pen/KWvrLO

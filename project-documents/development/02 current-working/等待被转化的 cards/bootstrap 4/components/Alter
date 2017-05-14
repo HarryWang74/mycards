@@ -1,0 +1,12 @@
+https://v4-alpha.getbootstrap.com/components/alerts/
+在页面内用 colored box 显示提示信息，可以被关闭
+
+  不同颜色
+  http://codepen.io/HarryWang74/pen/MprrzW
+
+  关闭 alter
+  http://codepen.io/HarryWang74/pen/LWeeqL
+
+  通过 JS 显示 Alter
+  close 后 Alter 会被从 DOM 移除，所以触发显示要插入 HTML
+  http://codepen.io/HarryWang74/pen/OpzzYa

@@ -1,0 +1,25 @@
+设置 flex items 的宽度
+
+  flex: <flex-grow> <flex-shrink> <flex-basis> 可以一次性设定 3 个参数
+
+  flex-grow
+  -webkit-flex-grow
+
+    宽度是其他 flex item 的多少倍
+    默认值是 0
+
+    https://codepen.io/HarryWang74/pen/ybawbr
+
+  flex-shrink
+  -webkit-flex-shrink
+
+    宽度是其他 flex item 的几分之一
+    默认值是 1
+    https://codepen.io/HarryWang74/pen/YVGbjy
+
+
+  flex-basis
+  -webkit-flex-basis
+
+    用 pixel 或 百分比设定宽度
+    https://codepen.io/HarryWang74/pen/zwKQgV

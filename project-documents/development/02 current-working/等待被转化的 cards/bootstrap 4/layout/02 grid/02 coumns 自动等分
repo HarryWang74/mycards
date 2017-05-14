@@ -1,0 +1,15 @@
+column 自动等分, 等高
+  基于 flex box 的新功能。
+    所有 column 等高，
+    不指定 column 数时，所有 column 自动等宽
+
+    http://codepen.io/HarryWang74/pen/BWXYXm
+
+
+coulmns 自动等分，换行
+  插入 .w-100 class 使自动等分 columns 换行
+  http://codepen.io/HarryWang74/pen/NpQYWM
+
+
+有 column 有宽度时，其他 columns 自动等分
+  http://codepen.io/HarryWang74/pen/evqMgq

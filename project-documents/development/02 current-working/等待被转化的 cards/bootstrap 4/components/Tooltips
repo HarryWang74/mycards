@@ -1,0 +1,9 @@
+Tooltips 是 rollover 特定区域，显示内容
+Popover 是点击特定区域，显示内容
+
+必须用代码初始化 popovers
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+http://codepen.io/HarryWang74/pen/gmqWgQ

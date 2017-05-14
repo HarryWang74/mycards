@@ -1,0 +1,4 @@
+使用 visibility: hidden 隐藏 element
+被隐藏 element 的高，宽，float 依旧影响布局
+
+<div class="invisible">...</div>

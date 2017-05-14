@@ -1,0 +1,32 @@
+设置 container 的 align-content，-webkit-align-content
+只有在允许 children 换行的的情况下，align-content 才有效
+
+  https://codepen.io/HarryWang74/pen/RVpeEm?editors=1100#0
+
+  align-content:
+  -webkit-align-content:
+  flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;
+
+
+  stretch:
+  默认值，children 自动填充 container 高度
+
+  flex-start:
+  child 高度等于实际内容，对齐 container flex axis 起始位置
+
+  flex-end:
+  children 高度按实际内容，对齐 container flex axis 终止位置
+
+  center:
+  children 高度按实际内容，对齐 container flex axis 中部
+
+  space-around:
+    child 高度等于实际内容，
+    child 间等距，
+    第一排 child 前，最后一排 child 后有空间
+
+  space-between
+    cild 高度等于实际内容
+    child 间等距
+    第一排 child 前，最后一排 child 后没有空间

@@ -1,0 +1,11 @@
+必须用代码初始化 popovers
+  $(function () {
+    $('[data-toggle="popover"]').popover()
+  })
+
+四个方向，可以关闭
+  添加 data-trigger="focus" 到按钮可以实现自动关闭
+  http://codepen.io/HarryWang74/pen/EWrZpG
+
+在其他 component 里使用，例如 input group, button group 添加 data-container="body"
+  http://codepen.io/HarryWang74/pen/ryPjEo

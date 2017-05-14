@@ -1,0 +1,11 @@
+01 column 类型，className
+  bootstrap 定义了 5 种 screen size，（每种 screen size 的尺寸，break point 见）
+
+  每种 screen size 对应不同的 column className
+
+  .col-
+  .col-sm-
+  .col-md-
+  .col-lg-
+
+  * extra small 的 className 变了

@@ -1,0 +1,12 @@
+rem
+  css3 新增加的功能
+  根据 root 或 <html> 的 font-size 计算 rem
+  现代浏览器默认所以元素的 parent <HTML> 的 font-size 是 16 pixel
+  rem 可以被应用到任何属性上 width, margin ....
+
+  https://codepen.io/HarryWang74/pen/zwRwNL
+
+  tip
+  默认设置下，1rem = 16px，可以把 1em 设置成 10 px，便于计算
+    设置 <html> { font-size:62.5%; }
+    下面所有 child 1rem = 10px; 15rem = 150px, 2.4rem = 24px

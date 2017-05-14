@@ -1,0 +1,5 @@
+karma
+	
+	https://karma-runner.github.io/0.13/index.html
+
+	A simple tool that allows you to execute JavaScript code in multiple real browsers for test.

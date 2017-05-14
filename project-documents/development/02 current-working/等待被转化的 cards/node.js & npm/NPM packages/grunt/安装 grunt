@@ -1,0 +1,6 @@
+安装 grunt
+	npm install -g grunt-cli
+	安装 grunt CLI，需要 global install
+
+	npm install grunt --save
+	安装 grunt 

@@ -1,0 +1,77 @@
+Locamotive
+	app // 所有项目原始文件
+		assets
+			javascripts // js 文件
+			stylesheets // scss 文件
+			vendor // 所有要用到的第三方插件
+		content_types // cms 数据类型
+		views
+			pages // layout 文件
+			snippets // snippet 文件
+	config // 系统设置
+	data // 测试数据
+	node_modules
+	public // CMS 运行时的 root 文件夹
+		fonts
+		images
+		javascript
+		stylesheets
+
+	* CMS 运行时以 public 作为 root folder, 
+	* CMS 运行时动态编译 app/view/pages 下面的 .liquid 文件
+
+Rota cota grunt 设置
+
+	* 简单编译，只有一个 gruntfile.js 定义所有任务
+
+	gruntfile.js
+		// 用 matchdep 载入所有 grunt.loadNpmTasks
+		require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+
+		grunt.initConfig({
+			pkg: grunt.file.readJSON('package.json'), // 读 npm 设置
+
+			app: { 
+				// 设置 app 文件夹
+			}
+
+			sass: {
+				// 把 app/assets/stylesheets 下面的 scss 编译成 css 送到 public/stylesheets/
+				// 所有第三方 scss 也一同编译
+			}
+
+			jshint{
+				// 检查 app/assets/javascripts 下面的所有 js 文件
+			}
+
+			concat{
+				// 把所有要用到的第三方 js 文件，项目自身的 js 文件打包 .tmp 下的 application.js
+				// * 项目所有要用到的第三方 css 文件，以 scss 的形式通过 sass 任务, 跟项目本身的 scss 一同编译
+			}
+
+			uglify{
+				// 压缩 .tmp 下的 application.js 后在 public/javascript 下生成 application.min.js
+			}
+
+			copy{
+				// 把一些不能压缩的第三方 js 从 app/assets/vendor 复制到 public/javascript 文件夹下面
+			}
+
+			shell{
+				// 运行 CMS 启动命令
+			}
+
+			watch{
+				jshint
+				javascripts
+					concat: 把所有 js 合成一个文件
+					uglify: 压缩合成后的 js
+				stylesheets
+					sass: 把 scss 编译成 css
+			}
+		});
+
+		grunt.registerTask('default', ['watch']);
+		grunt.registerTask('serve',   ['shell:serve', 'watch']);
+		grunt.registerTask('deploy', ['concat', 'uglify', 'copy', 'sass:production']);
+		grunt.registerTask('lint', ['jshint']);

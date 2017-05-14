@@ -1,0 +1,16 @@
+基本概念
+
+    * node.js 是用 chrom v8 Javascript engine 开发的 javascript runtime, 可以被安装在任何系统上。
+    * 最初开发 node.js 是为了让 developer 可以用 javascript 开发应用程序， 然后在远程服务器上通过 node.js 运行。
+    * 但随着 node.js 的普及，越来越多 developer 开始使用 node based tools 例如 grunt 和 gulp 来执行本地任务
+
+    关于 chrom v8 JS engine
+        https://developers.google.com/v8/		
+        * 用 C++ 开发的 JS 开源引擎
+        * 用于 Chrom
+        * 可以独立运行
+        * 可以被嵌入任何 C++ 应用程序
+
+升级/安装
+    https://nodejs.org/en/
+

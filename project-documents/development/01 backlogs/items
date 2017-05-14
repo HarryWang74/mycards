@@ -1,14 +1,18 @@
 能否应用 google search 到项目里
 是否应该使用 Jekyll
-project setup
 ux design
 ui design
+project setup
+
+https://css-tricks.com/almanac/
+https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/
+
 development
 convert flex to cards
 convert bootstrap4 to card
 learning angular2
 
-https://css-tricks.com/almanac/
+
 bootstrap convert to card
 看看 bootstrap4 是怎么把 flex 属性用在 gird system 和 ulility class 上的
 返回头再好好看看 bootstrap3
@@ -16,7 +20,5 @@ angular2
 react
 polymer
 Node.JS
-
 https://medium.com/startup-grind/how-to-not-suck-at-design-a-5-minute-guide-for-the-non-designer-291efac43037?ref=webdesignernews.com
 https://www.smashingmagazine.com/2017/04/applications-machine-learning-designers/
-https://www.smashingmagazine.com/2017/04/start-using-css-custom-properties/

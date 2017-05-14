@@ -1,0 +1,5 @@
+fork repo
+进入 project folder
+npm install (按 package.json 定义开始安装所有插件)
+打开 Gruntfile.js ，看看各项任务是如何设置的
+使用 grunt CLI 运行任务 grunt <任务名称>

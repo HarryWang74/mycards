@@ -6,6 +6,12 @@ home
     学习笔记
         flex box
         bootstrap4
+        Node.js
+            Grunt
     研究笔记
+        display 属性的比较
+        pixel，em rem
+        创建 grunt project
 
 * 首先基于现有内容，其次再考虑将来的扩展性
+* 可以考虑跳过 PS mockup, 因为只是基于 bootstrap，考虑写 CSS 时完成设计

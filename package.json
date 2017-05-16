@@ -1,0 +1,23 @@
+{
+  "name": "mycards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryWang74/mycards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarryWang74/mycards/issues"
+  },
+  "homepage": "https://github.com/HarryWang74/mycards#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "bootstrap": "^4.0.0-alpha.6"
+  }
+}

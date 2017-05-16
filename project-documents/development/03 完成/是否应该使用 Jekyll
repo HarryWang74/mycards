@@ -1,0 +1,13 @@
+找到了 3个可以 styling Code Snippets 的工具
+https://github.com/google/code-prettify
+https://github.com/syntaxhighlighter/syntaxhighlighter
+http://prismjs.com/
+
+和这篇文章
+https://www.taniarascia.com/adding-syntax-highlighting-to-code-snippets/comment-page-1/#comment-4159
+
+使用 Jekyll 的优势
+    可以用 liquid 写逻辑，动态组织文档。=> 用 angular 实现
+    pluging 可以 styling code snippet。=> 找到替代了
+
+    最终结果，不需要 Jekyll 了

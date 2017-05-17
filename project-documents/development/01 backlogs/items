@@ -18,3 +18,9 @@ polymer
 Node.JS
 https://medium.com/startup-grind/how-to-not-suck-at-design-a-5-minute-guide-for-the-non-designer-291efac43037?ref=webdesignernews.com
 https://www.smashingmagazine.com/2017/04/applications-machine-learning-designers/
+
+research
+  component 间用 application message 互动，传递数据。
+
+code library
+  application message

@@ -1,11 +1,9 @@
 
 创建项目
-  加入 grunt 插件，调用，编译 SASS
-  加入 grunt 插件，压缩，编译 JS
-  把 bootstrap 加入到系统，可以在 SASS 里直接调用 bootstrap 的变量
-
-
-
+  压缩 vender.css
+  压缩 vendor.js
+  加入 angular
+  创建 umbrelle app
 
 
 https://css-tricks.com/almanac/

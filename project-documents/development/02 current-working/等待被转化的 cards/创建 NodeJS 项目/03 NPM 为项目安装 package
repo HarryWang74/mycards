@@ -11,3 +11,7 @@
         重新安装所有 package
             npm install
             // 按 package.json 的几率，下载安装所有 package
+
+        在 git ignore 里指明不上传 NPM package
+        node_modules/*
+

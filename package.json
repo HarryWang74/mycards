@@ -19,5 +19,11 @@
   "dependencies": {
     "angular": "^1.6.4",
     "bootstrap": "^4.0.0-alpha.6"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "matchdep": "^1.0.1"
   }
 }

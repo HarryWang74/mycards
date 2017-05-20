@@ -1,0 +1,17 @@
+05 NPM Grunt 安装 Grunt
+
+    intro
+        安装 grunt，grunt CLI，配置 grunt config
+
+    content
+        在项目文件夹安装 Grunt
+            npm install grunt --save-dev
+
+        全局安装 grunt CLI
+            sudo npm install -g grunt-cli
+            // 全局安装 grunt CLI 可以通过 terminal 运行 grunt 命令
+
+        手动创建和配置 Gruntfile.js
+            项目 config 是基本 recipes
+            grunt config 使用 matchdep，grunt 启动时自动读取各个 task
+                npm install matchdep --save-dev

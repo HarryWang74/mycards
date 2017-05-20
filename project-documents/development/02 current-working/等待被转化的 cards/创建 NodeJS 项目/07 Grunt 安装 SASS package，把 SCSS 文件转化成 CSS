@@ -1,0 +1,24 @@
+07 Grunt 安装 SASS package，把 SCSS 文件转化成 CSS
+    intro
+        安装 package
+            npm install grunt-contrib-sass --save-dev
+        Gruntfile.js 转化 SCSS 文件
+            通过 watch package 如果 scss 文件改变，自动触发这个 task
+            sass: {
+                production: {
+                    // 转化选项
+                    options: {
+                        compass:     true,
+                        lineNumbers: false,
+                        style:       'compressed',
+                        debugInfo: true,
+                        precision:    10 // https://github.com/twbs/bootstrap-sass/issues/409
+                    },
+                    // 设定目标文件和源文件
+                    // 可以使用变量设置文件夹路径
+                    // 把 bootstrap 变量导入 application.scss，直接使用预定义变量
+                    files: {
+                        '<%= app.cssFolder %>application.css' : '<%= app.sassFoler %>application.scss'
+                    }
+                }
+            },

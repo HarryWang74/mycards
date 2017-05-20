@@ -1,0 +1,23 @@
+06 Grunt 安装 Watch package，文件改变自动触发 task
+    intro
+        安装 watch package
+            npm install grunt-contrib-watch --save-dev
+
+        设置 Gruntfile.js
+            watch: {
+                options: {
+                    livereload: true
+                },
+                // 同时 watch 多个任务
+                javascripts: {
+                    // 这个任务下需要 watch 的文件
+                    files: ['<%= app.javascript %>**/*.js'],
+                    // 文件改变后需要触发的任务
+                    tasks: ['concat', 'uglify']
+                },
+                stylesheets: {
+                    files: 'stylesheets/**/*.scss',
+                    tasks: 'sass:production'
+                }
+            }
+

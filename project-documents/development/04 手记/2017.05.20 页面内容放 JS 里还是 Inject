@@ -1,0 +1,30 @@
+
+使用 Inject
+    <column>
+        <parent>
+            <card>
+                <title> ...
+                <intro> ...
+                <content> ...
+    
+    所有内容都用 html 写，inject 到 component 里
+
+使用 JS
+    每篇文章是一个单独的 JS 文件，有自己独立的属性
+
+    article.title = "..."
+    article.intro = "..."
+    article.content = "..."
+
+    到页面时不写 Query，手动生成 feed
+
+    [
+        {   
+            article: article 
+            subChild[
+                article
+            ]
+        }
+    ]
+
+    没有 high light 提示，将来添加后台时再说吧。指不定用什么技术呢。现在写内容，把内容模块化就行了。

@@ -1,0 +1,22 @@
+页面草图完成后，review 使用什么技术开发。第一反应，Jekyll 更合适。
+管理都是静态页面，制定页面某个部分显示，Jekyll 更方便，更直观。Angular 主要是用来处理动态数据。在这个案子上怎么用还得动脑子想想。
+
+Jekyll
+    Good
+        按静态页面物理结构自动生成导航
+        用 liquid 抓取特定页面内容很简单
+        自动 hight light 语法
+    Bad
+        需要在本地配置，安装 Jekyll
+        每次存储后都需要编译，有点慢
+Angular
+    Good
+        在任何地方，任何环境都可以编辑。哪怕从页面 login github
+        不需要编译，速度快
+    Bad
+        每篇文章需要是一个独立的 component，路由，管理都有些麻烦，要动脑子想想怎么弄
+
+
+* 最终决定还是用 Angular
+    能帮助提高对 component programming 的认识
+    速度快，不用编译

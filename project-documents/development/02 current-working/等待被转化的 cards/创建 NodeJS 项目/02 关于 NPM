@@ -1,0 +1,6 @@
+02 关于 NPM
+
+    intro
+        * Node.js 的 package manager
+        * 安装 Node.js 后可就可以通过 NPM 下载别的其他发者发布的插件
+        * 目前 Node.js 下的各类 package 已经形成了世界上最大的 open source library

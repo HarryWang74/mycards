@@ -1,0 +1,13 @@
+03 NPM 为项目安装插件
+    intro
+        初始化
+            npm init
+            // npm 创建空白的 package.json，用来记录项目需要的插件
+        
+        安装 package
+            npm install [ package name ] --save
+            // npm 添加插件信息到 package.json
+        
+        重新安装所有 package
+            npm install
+            // 按 package.json 的几率，下载安装所有 package

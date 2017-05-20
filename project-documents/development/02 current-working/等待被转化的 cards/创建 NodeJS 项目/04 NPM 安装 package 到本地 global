@@ -1,0 +1,11 @@
+03 NPM 安装插件到本地机
+
+    intro
+        有些常用插件可以全局安装到本地机，在任何项目里使用
+        
+        安装
+            npm install [ package name ] -g
+        移除
+            npm uninstall [package name] -g
+        查看已安装的 package
+            npm list -g --depth=0

@@ -1,0 +1,37 @@
+安装 package
+    npm install grunt-contrib-concat --save-dev
+
+设置 Gruntfile.js
+    concat: {
+      // 合并选项
+      options: {
+        separator: ';',
+        stripBanners: {
+          block : true,
+          line  : true
+        }
+      },
+      // 把所有 JS library 文件合并成一个文件
+      vendorJS: {
+      dest: '<%= app.public_javascript %>vendor.js',
+      src: [
+          // '<%= app.vendor %>jquery.lazyload/jquery.lazyload.js',
+          // '<%= app.vendor %>owlcarousel/owl-carousel/owl.carousel.js',
+        ]
+      },
+      // 把所有 App JS 
+      applicationJS: {
+        dest: '<%= app.public_javascript %>application.js',
+        src: [
+          // '<%= app.javascript %>**/*.js'
+        ]
+      },
+      // 把所有 CSS library 合并成一个文件 
+      vendorCSS: {
+        dest: '<%= app.public_stylesheet %>vendor.css',
+        src: [
+          // '<%= app.vendor %>yamm3/yamm/yamm.css',
+          // '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
+        ]
+      },
+    },

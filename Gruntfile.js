@@ -6,11 +6,10 @@ module.exports = function(grunt) {
 
     // not / for root level folders
     app: {
-      javascript:        '_javascripts/',
+      jsFolder:        '_javascripts/',
       cssFolder:        'stylesheets/css/',
-      vendor:            '_vendors/',
-      public_javascript: '_site/javascripts/',
-      scssFoler: 'stylesheets/scss/'
+      vendor:            'node_modules/',
+      scssFoler: 'stylesheets/scss/',
     },
 
     // compile scss to css
@@ -31,6 +30,22 @@ module.exports = function(grunt) {
       }
     },
 
+    concat: {
+      options: {
+        separator: ';',
+        stripBanners: {
+          block : true,
+          line  : true
+        }
+      },
+      vendorCSS: {
+        dest: '<%= app.cssFolder %>vendor.css',
+        src: [
+          '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
+          // '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
+        ]
+      },
+    },
 
     watch: {
       options: {
@@ -50,4 +65,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('serve',   ['watch']);
+  grunt.registerTask('build', ['concat', 'sass:production']);
 };

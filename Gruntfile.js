@@ -6,9 +6,10 @@ module.exports = function(grunt) {
 
     // not / for root level folders
     app: {
-      jsFolder:        'javascripts/',
-      cssFolder:        'stylesheets/css/',
-      vendor:            'node_modules/',
+      appJS: 'app',
+      jsFolder: 'javascripts/',
+      cssFolder: 'stylesheets/css/',
+      vendor: 'node_modules/',
       scssFoler: 'stylesheets/scss/',
     },
 
@@ -48,6 +49,13 @@ module.exports = function(grunt) {
             '<%= app.vendor %>bootstrap/dist/js/bootstrap.min.js',
             '<%= app.vendor %>angular/angular.min.js',
           ]
+      },
+      // 合并 App JS
+      applicationJS: {
+        dest: '<%= app.jsFolder %>application.js',
+        src: [
+          '<%= app.appJS %>**/*.js'
+        ]
       },
       // 合并第三方 CSS
       vendorCSS: {

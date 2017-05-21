@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 
     // not / for root level folders
     app: {
-      jsFolder:        '_javascripts/',
+      jsFolder:        'javascripts/',
       cssFolder:        'stylesheets/css/',
       vendor:            'node_modules/',
       scssFoler: 'stylesheets/scss/',
@@ -30,7 +30,10 @@ module.exports = function(grunt) {
       }
     },
 
+    // https://github.com/gruntjs/grunt-contrib-concat
+    // 合并多个文件
     concat: {
+      // 合并选项
       options: {
         separator: ';',
         stripBanners: {
@@ -38,11 +41,19 @@ module.exports = function(grunt) {
           line  : true
         }
       },
+      // 合并第三方 JS library
+      vendorJS: {
+        dest: '<%= app.jsFolder %>vendor.js',
+        src: [
+            '<%= app.vendor %>bootstrap/dist/js/bootstrap.min.js',
+            '<%= app.vendor %>angular/angular.min.js',
+          ]
+      },
+      // 合并第三方 CSS
       vendorCSS: {
         dest: '<%= app.cssFolder %>vendor.css',
         src: [
           '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
-          // '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
         ]
       },
     },

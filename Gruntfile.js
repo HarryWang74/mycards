@@ -66,23 +66,61 @@ module.exports = function(grunt) {
       },
     },
 
+    // 压缩 CSS
+    // https://github.com/gruntjs/grunt-contrib-cssmin
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: '<%= app.cssFolder %>',
+          src: ['*.css', '!*.min.css'],
+          dest: '<%= app.cssFolder %>',
+          ext: '.css'
+        }]
+      }
+    },
+
+    // 压缩 JS
+    // https://github.com/gruntjs/grunt-contrib-uglify
+    uglify: {
+      options: {
+        sourceMap: false,
+        beautify:  false,
+        mangle:    true,
+        compress: { }
+      },
+      dist: {
+        files: [{
+          expand: true,
+          cwd:    '<%= app.jsFolder %>',
+          src:    '{,*/}*.js',
+          dest:   '<%= app.jsFolder %>'
+        }]
+      }
+    },
+
     watch: {
       options: {
         livereload: true
       },
-      // javascripts: {
-      //  files: ['<%= app.javascript %>**/*.js'],
-      //  tasks: ['concat', 'uglify']
-      // },
+      // app 文件夹下面的 JS 被修改后，运行 concat:applicationJS
+      // 重新 merge 所有 app js 到一个文件
+      javascripts: {
+        files: ['<%= app.appJS %>**/*.js'],
+        tasks: ['concat:applicationJS'],
+      },
+      // app 文件夹下面的 JS 被修改后，运行 concat:applicationJS
+      // 重新 merge 所有 app js 到一个文件
       stylesheets: {
         files: '<%= app.scssFoler %>**/*.scss',
-        tasks: 'sass:production'
+        tasks: 'sass:production',
       }
     }
   });
 
 
+
   grunt.registerTask('default', ['watch']);
   grunt.registerTask('serve',   ['watch']);
-  grunt.registerTask('build', ['concat', 'sass:production']);
+  grunt.registerTask('build', ['sass:production', 'concat', 'cssmin', 'uglify']);
 };

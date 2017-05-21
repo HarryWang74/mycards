@@ -1,0 +1,13 @@
+npm install grunt-contrib-cssmin --save-dev
+
+cssmin: {
+    target: {
+    files: [{
+        expand: true,
+        cwd: '<%= app.cssFolder %>',
+        src: ['*.css', '!*.min.css'],
+        dest: '<%= app.cssFolder %>',
+        ext: '.css'
+    }]
+    }
+},

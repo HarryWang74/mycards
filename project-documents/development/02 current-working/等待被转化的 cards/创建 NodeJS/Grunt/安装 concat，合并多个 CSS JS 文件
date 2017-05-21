@@ -11,27 +11,26 @@
           line  : true
         }
       },
-      // 把所有 JS library 文件合并成一个文件
+      // 合并第三方 JS library
       vendorJS: {
-      dest: '<%= app.public_javascript %>vendor.js',
-      src: [
-          // '<%= app.vendor %>jquery.lazyload/jquery.lazyload.js',
-          // '<%= app.vendor %>owlcarousel/owl-carousel/owl.carousel.js',
-        ]
+        dest: '<%= app.jsFolder %>vendor.js',
+        src: [
+            '<%= app.vendor %>bootstrap/dist/js/bootstrap.min.js',
+            '<%= app.vendor %>angular/angular.min.js',
+          ]
       },
-      // 把所有 App JS 
+      // 合并 App JS
       applicationJS: {
-        dest: '<%= app.public_javascript %>application.js',
+        dest: '<%= app.jsFolder %>application.js',
         src: [
-          // '<%= app.javascript %>**/*.js'
+          '<%= app.appJS %>**/*.js'
         ]
       },
-      // 把所有 CSS library 合并成一个文件 
+      // 合并第三方 CSS
       vendorCSS: {
-        dest: '<%= app.public_stylesheet %>vendor.css',
+        dest: '<%= app.cssFolder %>vendor.css',
         src: [
-          // '<%= app.vendor %>yamm3/yamm/yamm.css',
-          // '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
+          '<%= app.vendor %>bootstrap/dist/css/bootstrap.css',
         ]
       },
     },

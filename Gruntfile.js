@@ -48,6 +48,7 @@ module.exports = function(grunt) {
         src: [
             '<%= app.vendor %>bootstrap/dist/js/bootstrap.min.js',
             '<%= app.vendor %>angular/angular.min.js',
+            '<%= app.vendor %>@angular/router/angular1/angular_1_router.js',
           ]
       },
       // 合并 App JS

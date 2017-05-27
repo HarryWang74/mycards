@@ -1,0 +1,20 @@
+   JS
+        (function () {
+            "use strict";
+            angular.module('myApp', []);
+            angular.module('myApp').component('myCards', {
+            templateUrl: "/app/myCards.html",
+            controllerAs: "model",
+            controller: ['$window', function($window){
+            var model = this;
+
+            model.$onInit = function () {
+                console.log("model init")
+            };
+            }]
+        });
+        }());
+    HTML
+        <h1>My cards</h1>
+    添加 directive 到 body tag, 确保 app 正确初始化。
+        <body ng-app="myApp">

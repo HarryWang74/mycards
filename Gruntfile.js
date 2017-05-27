@@ -46,6 +46,8 @@ module.exports = function(grunt) {
       vendorJS: {
         dest: '<%= app.jsFolder %>vendor.js',
         src: [
+            '<%= app.vendor %>jquery/dist/jquery.min.js',
+            '<%= app.vendor %>tether/dist/js/tether.js',
             '<%= app.vendor %>bootstrap/dist/js/bootstrap.min.js',
             '<%= app.vendor %>angular/angular.min.js',
             '<%= app.vendor %>@angular/router/angular1/angular_1_router.js',
@@ -76,7 +78,7 @@ module.exports = function(grunt) {
           cwd: '<%= app.cssFolder %>',
           src: ['*.css', '!*.min.css'],
           dest: '<%= app.cssFolder %>',
-          ext: '.css'
+          ext: '.css',
         }]
       }
     },

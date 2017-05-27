@@ -1,0 +1,1 @@
+没查到用 NPM 下载 router 的方法，最简单从 project 下面复制文件 /node_modules/angular/angular_1_router.js

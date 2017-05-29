@@ -1,9 +1,13 @@
 (function () {
-    angular.module('myApp').component('cards', {
-    templateUrl: "/app/cards.html",
-    controllerAs: "model",
+    angular.module('myApp').component('cardsColumn', {
+    templateUrl: "/app/shared/cardsColumn.html",
+    bindings: {
+        "columnHeading": "@",
+    },
+    transclude: true,
+    controllerAs: "ctrl",
     controller: [function(){
-      var model = this;
+      var ctrl = this;
     }]
   });
 }());

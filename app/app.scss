@@ -1,1 +1,18 @@
-/*@import "../../node_modules/bootstrap/scss/_variables.scss";*/
+@import "../../node_modules/bootstrap/scss/_variables.scss";
+
+app{
+    display: block;
+    padding: 2rem;
+    .columnsWrapper{
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+    }
+}
+
+html, body, app{
+    height: 100%;
+}

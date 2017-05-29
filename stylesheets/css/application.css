@@ -1,2 +1,2 @@
-listing{padding:20px}listing .heading{padding-bottom:1rem;border-bottom:1px solid #333}.cards .cardsColumn{padding:1rem;overflow-y:scroll;width:23rem;background:#f4f4f4;min-height:10rem}
+app{display:block;padding:2rem}app .columnsWrapper{display:-webkit-flex;display:flex}app .card{margin-bottom:1rem}html,body,app{height:100%}cards-catalog .topSection{padding-bottom:1rem;border-bottom:1px solid #333}.cards .cardsColumn{padding:1rem;overflow-y:scroll;width:23rem;background:#f4f4f4;min-height:10rem}cards-column{flex:0 1 24rem;background:#f4f4f4;min-height:30rem;overflow-y:scroll;padding:1rem;margin:2rem 0.5rem 0.5rem 0rem}
 /*# sourceMappingURL=application.css.map */

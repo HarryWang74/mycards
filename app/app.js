@@ -13,7 +13,6 @@ angular.module('myApp').config(function($locationProvider) {
 angular.module('myApp').value('$routerRootComponent', 'app')
 
 
-
 // 定义顶层 App
 angular.module('myApp').component('app', {
     template: '<ng-outlet></ng-outlet>',
@@ -26,9 +25,10 @@ angular.module('myApp').component('app', {
         };
     }],
     // 顶层 App router config
+    
     $routeConfig: [
-        { path: "/", component: "cards", name: "Cards", useAsDefault: true  },
-        { path: "/**", redirectTo: ["Cards"] }
+        { path: "/", component: "cardsCatalog", name: "CardsCatalog", useAsDefault: true  },
+        { path: "/**", redirectTo: ["CardsCatalog"] }
     ],
 });
 

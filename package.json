@@ -22,6 +22,7 @@
     "tether": "^1.4.0"
   },
   "devDependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
     "grunt": "^1.0.1",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-cssmin": "^2.2.0",

@@ -1,3 +1,5 @@
+// 定义 myApp module
+// 加入 Inject compone router 到 module
 angular.module('myApp', ['ngComponentRouter']);
 // 把 componet 转化成 HTML5 component
 // requireBase 设置成 false 否则要在页面里设置 base=""
@@ -9,7 +11,6 @@ angular.module('myApp').config(function($locationProvider) {
 })
 // compoter router 初始化顶层 App
 angular.module('myApp').value('$routerRootComponent', 'app')
-
 
 
 // 定义顶层 App
@@ -24,25 +25,32 @@ angular.module('myApp').component('app', {
         };
     }],
     // 顶层 App router config
+    
     $routeConfig: [
-        { path: "/", component: "cards", name: "Cards", useAsDefault: true  },
-        { path: "/**", redirectTo: ["Cards"] }
+        { path: "/", component: "cardsCatalog", name: "CardsCatalog", useAsDefault: true  },
+        { path: "/**", redirectTo: ["CardsCatalog"] }
     ],
 });
 
 
-;(function () {
-    // 定义顶层 App
+
+(function () {
+    angular.module('myApp').component('cardsCatalog', {
+    templateUrl: "/app/listing/cardsCatalog.html",
+    controllerAs: "ctrl",
+    controller: [function(){
+      var ctrl = this;
+    }]
+  });
+}());
+
+
+(function () {
     angular.module('myApp').component('cards', {
     templateUrl: "/app/cards.html",
     controllerAs: "model",
     controller: [function(){
       var model = this;
-
-      model.$onInit = function () {
-          
-      };
     }]
   });
 }());
-

@@ -10,7 +10,7 @@ module.exports = function(grunt) {
       jsFolder: 'javascripts/',
       cssFolder: 'stylesheets/css/',
       vendor: 'node_modules/',
-      scssFoler: 'stylesheets/scss/',
+      scssFoler: 'app',
     },
 
     // compile scss to css
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         },
 
         files: {
-          '<%= app.cssFolder %>application.css' : '<%= app.scssFoler %>application.scss'
+          '<%= app.cssFolder %>application.css' : 'stylesheets/scss/application.scss'
         }
       }
     },
@@ -36,7 +36,6 @@ module.exports = function(grunt) {
     concat: {
       // 合并选项
       options: {
-        separator: ';',
         stripBanners: {
           block : true,
           line  : true
@@ -60,6 +59,14 @@ module.exports = function(grunt) {
           '<%= app.appJS %>**/*.js'
         ]
       },
+      // 合并 App SASS
+      applicationSCSS: {
+        dest: 'stylesheets/scss/application.scss',
+        src: [
+          '<%= app.scssFoler %>**/*.scss'
+        ]
+      },
+
       // 合并第三方 CSS
       vendorCSS: {
         dest: '<%= app.cssFolder %>vendor.css',
@@ -116,7 +123,7 @@ module.exports = function(grunt) {
       // 重新 merge 所有 app js 到一个文件
       stylesheets: {
         files: '<%= app.scssFoler %>**/*.scss',
-        tasks: 'sass:production',
+        tasks: ['concat:applicationSCSS', 'sass:production'],
       }
     }
   });

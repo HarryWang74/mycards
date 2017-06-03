@@ -15,7 +15,7 @@ angular.module('myApp').value('$routerRootComponent', 'app')
 
 // 定义顶层 App
 angular.module('myApp').component('app', {
-    template: '<ng-outlet></ng-outlet>',
+    templateUrl: "/app/app.html",
     controllerAs: "model",
     controller: ['$window', function($window){
         var model = this;
@@ -28,6 +28,10 @@ angular.module('myApp').component('app', {
     
     $routeConfig: [
         { path: "/", component: "cardsCatalog", name: "CardsCatalog", useAsDefault: true  },
+        { path: "/study", component: "studyCards", name: "StudyCards" },
+        { path: "/research", component: "researchCards", name: "ResearchCards" },
+        { path: "/library", component: "libraryCards", name: "LibraryCards" },
+        { path: "/life", component: "lifeCards", name: "LifeCards" },
         { path: "/**", redirectTo: ["CardsCatalog"] }
     ],
 });

@@ -15,7 +15,7 @@ angular.module('myApp').value('$routerRootComponent', 'app')
 
 // 定义顶层 App
 angular.module('myApp').component('app', {
-    template: '<ng-outlet></ng-outlet>',
+    templateUrl: "/app/app.html",
     controllerAs: "model",
     controller: ['$window', function($window){
         var model = this;
@@ -28,11 +28,41 @@ angular.module('myApp').component('app', {
     
     $routeConfig: [
         { path: "/", component: "cardsCatalog", name: "CardsCatalog", useAsDefault: true  },
+        { path: "/study", component: "studyCards", name: "StudyCards" },
+        { path: "/research", component: "researchCards", name: "ResearchCards" },
+        { path: "/library", component: "libraryCards", name: "LibraryCards" },
+        { path: "/life", component: "lifeCards", name: "LifeCards" },
         { path: "/**", redirectTo: ["CardsCatalog"] }
     ],
 });
 
 
+
+(function () {
+    angular.module('myApp').component('libraryCards', {
+    templateUrl: "/app/library/libraryCards.html",
+    bindings: {
+    },
+    transclude: true,
+    controllerAs: "ctrl",
+    controller: [function(){
+      var ctrl = this;
+    }]
+  });
+}());
+
+(function () {
+    angular.module('myApp').component('lifeCards', {
+    templateUrl: "/app/life/lifeCards.html",
+    bindings: {
+    },
+    transclude: true,
+    controllerAs: "ctrl",
+    controller: [function(){
+      var ctrl = this;
+    }]
+  });
+}());
 
 (function () {
     angular.module('myApp').component('cardsCatalog', {
@@ -57,10 +87,49 @@ angular.module('myApp').component('app', {
   });
 }());
 (function () {
+    angular.module('myApp').component('researchCards', {
+    templateUrl: "/app/research/researchCards.html",
+    bindings: {
+    },
+    transclude: true,
+    controllerAs: "ctrl",
+    controller: [function(){
+      var ctrl = this;
+    }]
+  });
+}());
+
+(function () {
     angular.module('myApp').component('cardsColumn', {
     templateUrl: "/app/shared/cardsColumn.html",
     bindings: {
         "columnHeading": "@",
+    },
+    transclude: true,
+    controllerAs: "ctrl",
+    controller: [function(){
+      var ctrl = this;
+    }]
+  });
+}());
+
+(function () {
+    angular.module('myApp').component('navTop', {
+    templateUrl: "/app/shared/navTop.html",
+    bindings: {
+    },
+    transclude: true,
+    controllerAs: "ctrl",
+    controller: [function(){
+      var ctrl = this;
+    }]
+  });
+}());
+
+(function () {
+    angular.module('myApp').component('studyCards', {
+    templateUrl: "/app/study/studyCards.html",
+    bindings: {
     },
     transclude: true,
     controllerAs: "ctrl",

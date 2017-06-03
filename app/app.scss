@@ -1,10 +1,14 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../app/mixins";
 
+$mainBlue:#0078d7;
+$mainBlueDark: #106ebe;
+$background: #f4f4f4;
+
 app{
     display: block;
-    padding: 2rem;
     height: 100%;
+    background: $background;
     .columnsWrapper{
         height: 100%;
         display: -webkit-flex;

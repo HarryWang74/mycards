@@ -1,9 +1,12 @@
-@import "../../node_modules/bootstrap/scss/_variables.scss";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../app/mixins";
 
 app{
     display: block;
     padding: 2rem;
+    height: 100%;
     .columnsWrapper{
+        height: 100%;
         display: -webkit-flex;
         display: flex;
     }

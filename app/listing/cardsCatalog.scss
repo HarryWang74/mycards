@@ -1,18 +1,12 @@
 cards-catalog{
+    display: block;
+    height: 100%;
+    overflow-y: hidden;
     .topSection{
         padding-bottom: 1rem;
         border-bottom: 1px solid #333;
     }
-}
-
-.cards{
-
-
-    .cardsColumn{
-        padding: 1rem;
-        overflow-y: scroll;
-        width: 23rem;
-        background: #f4f4f4;
-        min-height: 10rem;
+    cards-column{
+        @include i-flex(0, 1, 25%);
     }
 }
